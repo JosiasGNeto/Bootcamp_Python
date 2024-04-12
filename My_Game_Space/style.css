@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #480859;
+    --color-purple: #5B0661;
+    --color-purple2: #9b0aa5;
+    --color-light-purple: #C3145F;
+    --color-light-pink: #F65356;
+    --color-dark: #1A0E26;
+    --color-light-blue: #7E83F8;
+
+    --font-roboto: "Roboto", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{   
+    font-size: 1.6em;
+    font-family: var(--font-roboto);
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(assets/images/wallpaper.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 12em;
+}
+
+.header_socialMedia ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.header_socialMedia a,
+.nav_menu a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em;
+    font-size: 1.5em;
+    color:  var(--color-light-pink);        
+
+    transition: color 200ms;
+}
+
+.header_socialMedia a:hover,
+.nav_menu a:hover{
+    color: white;
+}
+
+#logo{
+    width: 14em;
+}
+
+.nav{
+    background-color: var(--color-primary);
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 5px black;
+}
+
+.nav_menu{
+    display: flex;
+    list-style-type: none;
+    padding-left: 4rem;
+}
+
+.main_title{
+    margin: 3rem;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+.posts{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Cards Section */
+
+.card{
+    width: 35rem;
+    height: 50rem;
+    border-radius: 0.8rem;
+    background-size: cover;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;  
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); 
+}
+
+.card:hover{
+    transform: translate(-5px , -5px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 250ms;
+}
+
+#ori{
+    background-image: url(assets/images/ori.jpg);
+    background-position: center center;
+}
+
+#hollow{
+    background-image: url(assets/images/hollow_knight.jpg);
+}
+
+#gris{
+    background-image: url(assets/images/gris.jpg);
+    background-position: center center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 12rem;
+    margin-top: 8rem;
+    padding: 2rem 0;
+    background-color: var(--color-purple);
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: -1px -1px 5px black;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--color-light-pink);
+}
+
+.footer a:hover{
+    color: var(--color-light-purple);
+}
+
+.address{
+    font-size: 1.4rem;
+}
+
+.address i{
+    color: var(--color-light-pink);
+}
+
+/* Posts */
+
+.post_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.section_post{
+    max-width: 35%;
+    font-size: 1.8rem;
+}
+
+.post_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50rem;
+}
+
+.game_page{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color-purple2);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.game_page:hover{
+    transform: translate(2px, -2px);
+    background-color: var(--color-purple);
+    transition: ease-in-out transform 300ms;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.page_arrow{
+    display: inline-block;
+    font-size: 5rem;
+}
+
+.page_arrow:hover{
+    transform: translate(2px, -2px);
+    transition: ease-in-out transform 300ms;
+}
