@@ -120,6 +120,7 @@ body{
 
 #hollow{
     background-image: url(assets/images/hollow_knight.jpg);
+    background-position: center center;
 }
 
 #gris{
