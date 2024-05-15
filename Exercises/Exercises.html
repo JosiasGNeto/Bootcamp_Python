@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+</head>
+<body>
+    <h1 id="titulo">Exercícios</h1>
+
+    <p id="display_01"></p>
+    <p id="display_02"></p>
+    <p id="display_03"></p>
+    <p id="display_04"></p>
+    <p id="display_05"></p>
+
+    <script>
+        //#######################################################################################//
+        //                                ATIVIDADES DE OPERADORES                               //
+        //#######################################################################################//
+
+        //================================ OPERADORES ARITMÉTICOS ===============================//
+
+        //------------------------------------ Exercício #01 ------------------------------------//
+
+        //--- Operações Combinadas ---//
+
+        console.log(10 + 5 * 2);
+        console.log((10 + 5) * 2);
+        console.log(10 + (5 * 2));
+
+        //---- Notação Científica ----//
+
+        console.log(10 ** 3);
+        console.log(10 ** -3);
+        console.log(2 ** 3);
+        console.log(2 ** 0);
+        console.log(0 ** 0);
+
+        //---------------------------------------------------------------------------------------//
+
+        //------------------------------------ Exercício #02 ------------------------------------//
+            
+        {   //- Área e Perímetro de uma circunferência -//
+            
+            const PI = 3.14;
+
+            let radio = Number(prompt("Digite o raio da circunferência: ")); //
+            let area = PI * radio ** 2;
+            let perimeter = 2 * PI * radio;
+            document.getElementById("display_01").innerHTML = `<p> A área da circunferência é ${area} </p>`;
+            document.getElementById("display_02").innerHTML = `<p> O perímetro da circunferência é ${perimeter} </p>`;
+            
+        }
+
+        //---------------------------------------------------------------------------------------//
+
+        //------------------------------------ Exercício #03 ------------------------------------//
+        
+        {   //- Área de um Triângulo -//
+
+            let height = Number(prompt("Digite a altura do triângulo:"));
+            let width = Number(prompt("Digite qual a largura da base do triângulo:"))
+            let area = (height * width) / 2;
+            document.getElementById("display_03").innerHTML = `<p> A área do triângulo é ${area} </p>`;
+
+        }
+
+        //---------------------------------------------------------------------------------------//
+
+        //------------------------------------ Exercício #04 ------------------------------------//
+    
+        {   //- Área e Perímetro de um Quadrado -//
+
+            let side = Number(prompt("Digite o tamanho do lado do quadrado:"));
+            let area = side * side;
+            let perimeter = side * 4;
+            document.getElementById("display_04").innerHTML = `<p> A área do quadrado é ${area} </p>`;
+            document.getElementById("display_05").innerHTML = `<p> O perímetro do quadrado é ${perimeter} </p>`;
+
+        }
+
+        //========================================================================================//
+
+
+        //=============================== OPERADORES DE ATRIBUIÇÃO ===============================//
+
+        //------------------------------------ Exercício #01 -------------------------------------//
+
+        {   //- Atribuição de Valores a uma variável -//
+
+            let x = 10;
+                x += 3;
+
+            //- Conseguir o resto da divisão -//
+
+            let variable = 15;
+            let result;
+                //===============================================================//
+                result = Number.parseInt(variable / 3);
+                console.log(`Valor da divisão de ${variable} por 3: ${result}`);
+                result = Number.parseInt(variable % 3);
+                console.log(`Resto da divisão de ${variable} por 3: ${result}`);
+                //---------------------------------------------------------------//
+                result = Number.parseInt(variable / 5);
+                console.log(`Valor da divisão de ${variable} por 5: ${result}`);
+                result = Number.parseInt(variable % 5);
+                console.log(`Resto da divisão de ${variable} por 5: ${result}`);
+                //---------------------------------------------------------------//
+                result = Number.parseInt(variable / 7);
+                console.log(`Valor da divisão de ${variable} por 7: ${result}`);
+                result = Number.parseInt(variable % 7);
+                console.log(`Resto da divisão de ${variable} por 7: ${result}`);
+                //---------------------------------------------------------------//
+                result = Number.parseInt(variable / 10);
+                console.log(`Valor da divisão de ${variable} por 10: ${result}`);
+                result = Number.parseInt(variable % 10);
+                console.log(`Resto da divisão de ${variable} por 10: ${result}`);
+                //===============================================================//
+
+
+        }
+
+        //---------------------------------------------------------------------------------------//
+
+        //------------------------------------ Exercício #01 ------------------------------------//
+
+        {   //- Declarar uma variável "total" e realizar operações -//
+
+            let total = 50;
+                console.log(`Valor Inicial: ${total}`);
+                total = total - 10;
+                console.log(`Subtraindo 10: ${total}`);
+                total = total + ((21/100) * total);
+                console.log(`Adicionando 21%: ${total}`);
+                total = total + 20 + ((10/100) * 20);
+                console.log(`Adicionando 20 e 10% de 20: ${total}`);
+                
+        }
+
+        //---------------------------------------------------------------------------------------//
+
+        //------------------------------------ Exercício #02 ------------------------------------//
+
+        {   //- Contador
+
+            let counter = 5;
+                console.log(`contador ${counter}`);
+                counter *= 2;
+                console.log(`contador ${counter}`);
+                counter *= 2;
+                console.log(`contador ${counter}`);
+                counter *= 2;
+                console.log(`contador ${counter}`);
+                counter *= 2;
+                console.log(`contador ${counter}`);
+                counter *= 2;
+                console.log(`contador ${counter}`);
+
+        }
+
+        //---------------------------------------------------------------------------------------//
+
+        //------------------------------------ Exercício #02 ------------------------------------//
+
+        {   //- Operações matemáticas -//
+
+            let saldo = 100;
+            //==============================================//
+                saldo -= saldo * (10/100);
+                console.log(`Subtrair 10%: ${saldo}`);
+            //----------------------------------------------//
+                saldo -= 15;
+                console.log(`Subtrair 15: ${saldo}`);
+            //----------------------------------------------//
+                saldo += saldo * (12.5/100);
+                console.log(`Adicionar 12.5%: ${saldo}`);
+            //----------------------------------------------//
+                saldo /= 2;
+                console.log(`Dividir por 2: ${saldo}`);
+            //----------------------------------------------//
+                saldo += saldo * (21/100);
+                console.log(`Adicionar 21%: ${saldo}`);
+            //==============================================//
+
+        }
+    
+        //---------------------------------------------------------------------------------------//
+
+        //========================================================================================//
+
+
+        //=============================== OPERADORES DE COMPARAÇÃO ===============================//
+
+        {   //- Provando Operadores de Comparação -//
+
+
+
+        }
+
+        //========================================================================================//
+    </script>
+</body>
+</html>
