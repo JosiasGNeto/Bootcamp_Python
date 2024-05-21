@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Funções</title>
+</head>
+<body>
+    <h1 id="titulo">Exercícios de Funções</h1>
+
+    <hr>
+
+    <h2>Exercício #01</h2>
+    <h3>Objetivo: Chamar uma funçao para somar dois valores (3, 5).</h3>
+    <p id="display_01"></p>
+
+    <hr>
+
+    <h2>Exercício #02</h2>
+    <h3>Objetivo: Chamar uma funçao para saber se um número é par ou impar.</h3>
+    <p id="display_02"></p>
+
+    <hr>
+
+    <h2>Exercício #03</h2>
+    <h3>Objetivo: Chamar uma funçao para saber se um número é múltiplo de outro número.</h3>
+    <p id="display_03"></p>
+
+    <hr>
+
+    <h2>Exercício #04</h2>
+    <h3>Objetivo: Chamar uma funçao para repetir a quantidade de vezes desejada uma determinada String.</h3>
+    <p id="display_04"></p>
+
+    <hr>
+
+    <script>
+
+        //#######################################################################################//
+        //                                  ATIVIDADES DE FUNÇÕES                                //
+        //#######################################################################################//
+
+        {//------------------------------------ Exercício #01 ------------------------------------//
+
+        function somar(x, y){
+            return x + y;
+        }
+
+        x = Number(prompt("Digite o primeiro valor: "));
+        y = Number(prompt("Digite o segundo valor: "));
+        res = somar(x, y);
+        document.getElementById("display_01").innerHTML = `A soma de ${x} + ${y} = ${res}`;
+
+        }//---------------------------------------------------------------------------------------//
+
+        {//------------------------------------ Exercício #02 ------------------------------------//
+
+        function ePar(x){
+            let espar = (x % 2 == 0);
+            return espar;
+        }
+
+        x = Number(prompt("Digite um número"));
+        res = ePar(x);
+        document.getElementById("display_02").innerHTML = `${x} é um número par ? <strong>${res}</strong>`;
+
+        }//---------------------------------------------------------------------------------------//
+
+        {//------------------------------------ Exercício #03 ------------------------------------//
+
+        function eMultiplo(x, y){
+            let multiplo = (x % y == 0);
+            return multiplo;
+        }
+
+        x = Number(prompt("Digite o dividendo: "));
+        y = Number(prompt("Digite o divisor: "));
+        res = eMultiplo(x, y);
+        document.getElementById("display_03").innerHTML = `O número ${x} é múltiplo de ${y}? <strong>${res}</strong>`;
+
+        //Nota: Não estamos validando o tipo de informação introduzida pelo usuário.
+
+        }//---------------------------------------------------------------------------------------//
+
+        {//------------------------------------ Exercício #04 ------------------------------------//
+
+        function repetir(x, y){
+            let repeticao = "";
+            for(let i = 0; i <= y - 1; i++){
+                repeticao += x;
+            }
+            return repeticao;
+        }
+
+        x = String(prompt("Digite uma string: "));
+        y = Number(prompt("Digite o número de vezes que deseja repetir: "));
+        res = repetir(x, y);
+        document.getElementById("display_04").innerHTML = res;
+
+        }//---------------------------------------------------------------------------------------//
+
+    </script>
+
+</body>
+</html>
