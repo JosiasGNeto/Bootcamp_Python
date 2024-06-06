@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Condicionais</title>
+</head>
+<body>
+    <h1 id="titulo">Exercícios de Condicionais</h1>
+
+    <hr>
+
+    <h2>Exercício #00</h2>
+    <h3>Objetivo: Validar que o dado inserido é um número.</h3>
+    <p id="display_00"></p>
+    <p id="display_01"></p>
+
+    <script>
+
+        //##############################################################################################################################//
+        //                                                     ATIVIDADES DE CONDICIONAIS                                               //
+        //##############################################################################################################################//
+
+        {//---------------------------------------------------------- Exercício #00 ----------------------------------------------------//
+            
+            let num = Number(prompt("Digite um número: "));
+
+            if(Number.isNaN(num) || typeof(num) != 'number'){
+                document.getElementById("display_00").innerHTML = "O valor inserido não é um número válido!";
+            } else { 
+                document.getElementById("display_00").innerHTML = "O valor inserido é um número válido!";
+             }
+
+        }//-----------------------------------------------------------------------------------------------------------------------------//
+
+    </script>
+
+</body>
+</html>
